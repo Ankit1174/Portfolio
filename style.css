@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tangerine:wght@400;700&family=Unbounded:wght@200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.navbar {
+    background-color: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    font-family: poppins, sans-serif;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.navbar li {
+    margin: 50px;
+}
+
+.navbar li a {
+    text-decoration: none;
+}
+
+.container {
+    background-color: #1A1A1D;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.landingPage, .about, .education {
+    height: 90vh;
+    width: 95vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/landingPage_bg.jpg) center center;
+    background-size: cover;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    margin: 15px;
+}
+
+.landingPage h1 {
+    margin-top: 10%;
+    margin-bottom: 20px;
+}
+
+.landingPage span {
+    font-size: large;
+}
+
+.landingPage p {
+    text-align: center;
+    margin-top: 20px;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+    color: #f2f2f2;
+}
+
+.para {
+    width: 70vw;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+    color: #f2f2f2;
+}
+
+
+
+/*  */
+
+.education {
+    padding: 20px;
+    background-color: #1A1A1D;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+.education h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.education-box {
+    width: 350px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-family: 'Poppins', sans-serif;
+    color: #f2f2f2;
+}
+
+.education-box h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.slider {
+    position: relative;
+    height: 40px; /* Adjust based on content height */
+    overflow: hidden;
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    text-align: center;
+    animation: slideAnimation 12s infinite; /* Adjust duration */
+}
+
+.slide:nth-child(1) { animation-delay: 0s; }
+.slide:nth-child(2) { animation-delay: 3s; }
+.slide:nth-child(3) { animation-delay: 6s; }
+.slide:nth-child(4) { animation-delay: 9s; }
+
+/* Keyframes for slide effect */
+@keyframes slideAnimation {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    25% { opacity: 1; }
+    35% { opacity: 0; }
+    100% { opacity: 0; }
+}
